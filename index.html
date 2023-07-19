@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link
 		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230715212002"
+		href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230719234410"
 	/>
 	<link
 		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230715212002"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230719234410"
 	/>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230715212002" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230719234410" />
 	<link rel="icon" href="./img/favicon.png" />
 	<title>Портфолио | Wvfox</title>
 </head>
@@ -28,10 +28,13 @@
 		</div>
 		<nav class="header__nav menu__body">
 			<button data-goto="home" class="header__nav-link">Обо мне</button>
-			<button data-goto="portfolio" class="header__nav-link">Портфолио</button>
+			<button data-goto="portfolio" class="header__nav-link">Мои работы</button>
 			<button data-goto="skills" class="header__nav-link">
 				Навыки и умения
 			</button>
+			<!-- <button data-goto="faq" class="header__nav-link">
+				Ответы на вопросы
+			</button> -->
 		</nav>
 	</div>
 </div>
@@ -447,7 +450,7 @@
 <div class="portfolio__item-body">
 	<h3 class="portfolio__item-point">
 		<span>Название проекта</span>
-		Сайт-портфолио | Codehal
+		Сайт-портфолио | Codehal
 	</h3>
 	<div class="portfolio__item-line"></div>
 	<h4 class="portfolio__item-point">
@@ -850,99 +853,283 @@
 	<div class="skills__content">
 		<div id="skills-content-left" class="skills__body animate__animated">
 			<h3 class="skills__title">Специализация</h3>
-			<ul class="skills__statistics">
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+			<ul class="skills__statistics spoilers" data-accordion>
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">HTML</h4>
 	<span class="skills__item-value">99%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Hypertext Markup Language — язык разметки для создания структуры
+							веб-страницы и представления контента.
+						</p>
+						<p>
+							Благодаря разметке браузер знает в каком порядке отображать
+							элементы, и что они значат.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">CSS/SASS</h4>
 	<span class="skills__item-value">95%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							CSS — язык каскадных стилей, который задаёт визуальное оформление
+							языков разметки.
+						</p>
+						<p>
+							Sass — это метаязык (язык для описания другого языка), который
+							упрощает и ускоряет написание CSS-кода. Его часто называют
+							препроцессором CSS — это означает, что Sass имеет свой синтаксис,
+							из которого генерирует CSS-код, понятный любому браузеру.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">JS</h4>
 	<span class="skills__item-value">70%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							JavaScript — это полноценный динамический язык программирования,
+							который применяется к HTML документу, и может обеспечить
+							динамическую интерактивность на веб-сайтах.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">WordPress</h4>
 	<span class="skills__item-value">60%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							WordPress – это система управления (CMS), позволяющая работать с
+							контентом сайта и администрировать ресурс.
+						</p>
+						<p>
+							CMS (Content Management System) – это система управления контентом
+							на сайте (создание и публикация записей, размещение виджетов,
+							изменение дизайна, расположение и отображение различных элементов
+							и т. д.). Все, что формирует сайт как таковой, создается и
+							редактируется с помощью CMS. Ее также называют движком ресурса.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">React</h4>
 	<span class="skills__item-value">65%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							React — это JavaScript-библиотека для создания пользовательских
+							интерфейсов.
+						</p>
+						<p>
+							React предоставляет высокую скорость разработки, простоту и
+							масштабируемость.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">Django</h4>
 	<span class="skills__item-value">30%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Django — это высокоуровневый Python веб-фреймворк, который
+							позволяет быстро создавать безопасные и поддерживаемые веб-сайты
+						</p>
+						<p>
+							Django используется для написания серверной части сайта - бэкенда.
+						</p>
+					</div>
 				</li>
 			</ul>
 		</div>
 		<div id="skills-content-right" class="skills__body animate__animated">
 			<h3 class="skills__title">Навыки</h3>
-			<ul class="skills__statistics">
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+			<ul class="skills__statistics spoilers" data-accordion>
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">Верстка</h4>
 	<span class="skills__item-value">99%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Верстка сайта — это структурированное сочетание изображений,
+							заголовков, подзаголовков, таблиц, инфографик, текста и других
+							элементов на странице c помощью языка разметки HTML и языка
+							описания внешнего вида страницы CSS.
+						</p>
+						<p>
+							Главная задача верстальщика — точно и без ошибок отправить
+							прототип в реальный код. Простыми словами, верстка — это перенос
+							предварительного макета сайта в HTML.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">Адаптив</h4>
 	<span class="skills__item-value">99%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Адаптивность — это способность сайта «подстраиваться» под
+							различные технические условия (а именно, под размеры экрана
+							пользовательского устройства).
+						</p>
+						<p>
+							Адаптивный сайт хорошо смотрится и на десктопном мониторе (обычный
+							ПК), и на планшетном компьютере, и на экране смартфона.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">Фронтенд</h4>
 	<span class="skills__item-value">75%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Фронтенд — это клиентская часть продукта (интерфейс, с которым
+							взаимодействует пользователь).
+						</p>
+						<p>
+							В случае с сайтом, её формирует и выводит на экран браузер,
+							который работает с HTML, CSS и JavaScript.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">Бэкенд</h4>
 	<span class="skills__item-value">35%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							Бэкенд — это внутренняя часть продукта, которая находится на
+							сервере и скрыта от пользователей.
+						</p>
+					</div>
 				</li>
-				<li class="skills__statistics-item">
-					<div class="skills__item-counter">
+				<li class="spoilers__item">
+					<button class="spoilers__control" aria-expanded="false">
+						<div class="skills__statistics-item">
+							<div class="skills__item-counter">
 	<h4 class="skills__item-title">SEO-оптимизация</h4>
-	<span class="skills__item-value">40%</span>
+	<span class="skills__item-value">60%</span>
 </div>
 <div class="skills__item-progressbar"><span></span></div>
 
+						</div>
+					</button>
+					<div
+						class="spoilers__content skills__statistics-description"
+						aria-hidden="true"
+					>
+						<p>
+							SEO-оптимизация – это комплекс мер по улучшению сайта для его
+							ранжирования в поисковых системах.
+						</p>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -950,6 +1137,59 @@
 </div>
 
 				</section>
+
+				<!-- <section id="faq" class="section faq">
+					<div class="container faq__container animation">
+	<h2 id="faq-title" class="section__title animate__animated">
+		<span>Ответы</span> на часто задаваемые вопросы
+	</h2>
+	<div class="faq__content">
+		<ul class="faq__list spoilers" data-accordion>
+			<li class="spoilers__item spoiler--open">
+				<button class="spoilers__control" aria-expanded="false">
+					<h3 class="faq__title">Работа по договору?</h3>
+				</button>
+				<div class="spoilers__content faq__description" aria-hidden="true">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+					beatae! Labore, tenetur. Id culpa quas, eos magnam quos laboriosam
+					quasi.
+				</div>
+			</li>
+			<li class="spoilers__item">
+				<button class="spoilers__control" aria-expanded="false">
+					<h3 class="faq__title">Сколько будет стоить?</h3>
+				</button>
+				<div class="spoilers__content faq__description" aria-hidden="true">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+					beatae! Labore, tenetur. Id culpa quas, eos magnam quos laboriosam
+					quasi.
+				</div>
+			</li>
+			<li class="spoilers__item">
+				<button class="spoilers__control" aria-expanded="false">
+					<h3 class="faq__title">Есть ли техническая поддержка проекта?</h3>
+				</button>
+				<div class="spoilers__content faq__description" aria-hidden="true">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+					beatae! Labore, tenetur. Id culpa quas, eos magnam quos laboriosam
+					quasi.
+				</div>
+			</li>
+			<li class="spoilers__item">
+				<button class="spoilers__control" aria-expanded="false">
+					<h3 class="faq__title">Какое у меня образование?</h3>
+				</button>
+				<div class="spoilers__content faq__description" aria-hidden="true">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+					beatae! Labore, tenetur. Id culpa quas, eos magnam quos laboriosam
+					quasi.
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+				</section> -->
 			</main>
 		</div>
 
@@ -1679,10 +1919,10 @@
 
 
 		<!-- https://github.com/mattboldt/typed.js/ -->
-		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js?_v=20230715212002"></script>
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js?_v=20230719234410"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230715212002"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230719234410"></script>
 
-		<script src="js/app.min.js?_v=20230715212002"></script>
+		<script src="js/app.min.js?_v=20230719234410"></script>
 	</body>
 </html>
